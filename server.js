@@ -7,4 +7,4 @@ app.get('/', (req, res) => {
 });
 
 
-app.listen(port, () => console.log(`Application listening on port ${port}!`))
+app.listen(process.env.PORT || port, () => console.log(`Application listening on port ${port}!`))
