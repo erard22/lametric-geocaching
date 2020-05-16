@@ -1,0 +1,23 @@
+{
+  "name": "lametric-geocaching",
+  "version": "1.0.0",
+  "description": "node backend for lametric widget",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erard22/lametric-geocaching.git"
+  },
+  "keywords": [
+    "lametric",
+    "node"
+  ],
+  "author": "Michel Erard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erard22/lametric-geocaching/issues"
+  },
+  "homepage": "https://github.com/erard22/lametric-geocaching#readme"
+}
