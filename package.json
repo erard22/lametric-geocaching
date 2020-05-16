@@ -2,8 +2,12 @@
   "name": "lametric-geocaching",
   "version": "1.0.0",
   "description": "node backend for lametric widget",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "docker-build": "docker build -t erard22/lametric-geocaching .",
+    "docker-run": "docker run --name lametric-geocaching -p 3000:3000 -d erard22/lametric-geocaching:latest",
+    "docker-stop": "docker stop lametric-geocaching",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/erard22/lametric-geocaching/issues"
   },
-  "homepage": "https://github.com/erard22/lametric-geocaching#readme"
+  "homepage": "https://github.com/erard22/lametric-geocaching#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
