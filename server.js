@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const port = 3000;
 
@@ -13,6 +14,10 @@ let cacher = {
 
 app.get('/geocaching', (req, res) => {
     res.send(cacher);
+});
+
+app.get('/privacy.html', (req, res) => {
+    res.sendFile(path.join(__dirname + '/privacy.html'));
 });
 
 
