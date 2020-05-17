@@ -2,8 +2,17 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-app.get('/', (req, res) => {
-    res.send('Hello World, from express');
+let cacher = {
+    "frames": [
+        {
+            "text": "Länggasse45: 212 founds",
+            "icon": "i37601"
+        }
+    ]
+};
+
+app.get('/geocaching', (req, res) => {
+    res.send(cacher);
 });
 
 
