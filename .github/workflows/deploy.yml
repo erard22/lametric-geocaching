@@ -20,7 +20,7 @@ jobs:
         run: git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git
 
       - uses: akhileshns/heroku-deploy@master # This is the action
-          with:
-            heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-            heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
-            heroku_email: "michel.erard@gmail.com"
+        with:
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+          heroku_email: "michel.erard@gmail.com"
