@@ -33,3 +33,10 @@ jobs:
         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
         heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
         heroku_email: "michel.erard@gmail.com"
+
+    - name: Notification
+      uses: pgrimaud/action-lametric@v1
+      env:
+        LAMETRIC_ACCESS_TOKEN: ${{ secrets.LAMETRIC_ACCESS_TOKEN }}
+        LAMETRIC_PUSH_URL: ${{ secrets.LAMETRIC_PUSH_URL }}
+        NOTIFICATION_TEXT: "Geocaching App Backend deployed"
