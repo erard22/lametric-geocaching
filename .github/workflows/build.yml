@@ -35,7 +35,7 @@ jobs:
         heroku_email: "michel.erard@gmail.com"
 
     - name: Notification
-      uses: pgrimaud/action-lametric@v1
+      uses: pgrimaud/action-lametric@1.0.0
       env:
         LAMETRIC_ACCESS_TOKEN: ${{ secrets.LAMETRIC_ACCESS_TOKEN }}
         LAMETRIC_PUSH_URL: ${{ secrets.LAMETRIC_PUSH_URL }}
